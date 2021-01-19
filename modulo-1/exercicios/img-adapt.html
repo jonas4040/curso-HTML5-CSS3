@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">		
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	
+	<title>Imaji adaptavs</title>
+	
+	<style>
+		/*source,img{
+			width:auto;
+			transition: width ease 3s;
+		}*/
+	</style>
+
+</head>
+	
+<body>
+	<h1>Imagem abaixo</h1>	
+	<strong><em>Gire</em> a tela ou <em>Redimensione</em> a Janela</strong>	
+	
+	<picture>
+		<source media="(max-width:400px)" srcset="img/p.png" type="image/png" >
+		<source media="(max-width:700px)" srcset="img/m.png" type="image/png" >
+		
+		<!-- Se nao tiver essa tag de Fallback, ele nao mostra nada-->
+		<img src="img/gg.png" alt="IMAGEM GRANDONA" > 
+	</picture>
+</body>
+</html>
